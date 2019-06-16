@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/lbl_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Name"/>
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbl_name"
+        />
+
+    <TextView
+        android:id="@+id/lbl_mail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_name"
+        android:text="Email"/>
+
+    <EditText
+        android:id="@+id/txt_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbl_mail"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/lbl_username"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_mail"
+        android:text="Username"/>
+
+    <EditText
+        android:id="@+id/txt_uname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbl_username"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/lbl_password"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_uname"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbl_password"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/lbl_cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/txt_password"
+        android:text="Confirm Password"/>
+
+    <EditText
+        android:id="@+id/txt_cpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/lbl_cpassword"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/txt_cpassword"/>
+
+
+</RelativeLayout>

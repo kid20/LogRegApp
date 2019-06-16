@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_uname"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Username"/>
+
+   <EditText
+       android:id="@+id/txt_user"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+
+       android:layout_below="@id/lbl_uname"
+
+       />
+
+    <TextView
+        android:id="@+id/lbl_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txt_user"
+        android:text="Password"/>
+
+    <EditText
+        android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingTop="50dp"
+        android:layout_below="@id/lbl_pass"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:layout_below="@id/txt_pass"/>
+
+    <TextView
+        android:id="@+id/lbl_registter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/btn_log"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:text="Click Here to Register"
+        android:textColor="@color/colorAccent"/>
+</RelativeLayout>
